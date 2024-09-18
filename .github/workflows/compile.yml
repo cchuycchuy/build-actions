@@ -9,7 +9,7 @@ on:
     branches:
       - main
     paths:
-      - 'build/xwrt_psg1208/relevance/start'
+      - 'build/openwrt_psg1208/relevance/start'
 
 env:
   GITHUB_LINK: https://github.com/${{github.repository}}
@@ -34,7 +34,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [xwrt_psg1208]
+        target: [openwrt_psg1208]
 
     steps:    
     - name: 准备结束
